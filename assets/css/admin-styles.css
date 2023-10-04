@@ -1,0 +1,221 @@
+/**************** Import Font-Family ****************/
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Black.eot");
+  src: url("../fonts/Inter-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Black.woff2") format("woff2"),
+    url("../fonts/Inter-Black.woff") format("woff"),
+    url("../fonts/Inter-Black.ttf") format("truetype"),
+    url("../fonts/Inter-Black.svg#Inter-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-ExtraLight.eot");
+  src: url("../fonts/Inter-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Inter-ExtraLight.woff") format("woff"),
+    url("../fonts/Inter-ExtraLight.ttf") format("truetype"),
+    url("../fonts/Inter-ExtraLight.svg#Inter-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.eot");
+  src: url("../fonts/Inter-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Bold.woff2") format("woff2"),
+    url("../fonts/Inter-Bold.woff") format("woff"),
+    url("../fonts/Inter-Bold.ttf") format("truetype"),
+    url("../fonts/Inter-Bold.svg#Inter-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-ExtraBold.eot");
+  src: url("../fonts/Inter-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Inter-ExtraBold.woff") format("woff"),
+    url("../fonts/Inter-ExtraBold.ttf") format("truetype"),
+    url("../fonts/Inter-ExtraBold.svg#Inter-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.eot");
+  src: url("../fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/Inter-Medium.woff") format("woff"),
+    url("../fonts/Inter-Medium.ttf") format("truetype"),
+    url("../fonts/Inter-Medium.svg#Inter-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Light.eot");
+  src: url("../fonts/Inter-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Light.woff2") format("woff2"),
+    url("../fonts/Inter-Light.woff") format("woff"),
+    url("../fonts/Inter-Light.ttf") format("truetype"),
+    url("../fonts/Inter-Light.svg#Inter-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot");
+  src: url("../fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff"),
+    url("../fonts/Inter-Regular.ttf") format("truetype"),
+    url("../fonts/Inter-Regular.svg#Inter-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Thin.eot");
+  src: url("../fonts/Inter-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Thin.woff2") format("woff2"),
+    url("../fonts/Inter-Thin.woff") format("woff"),
+    url("../fonts/Inter-Thin.ttf") format("truetype"),
+    url("../fonts/Inter-Thin.svg#Inter-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.eot");
+  src: url("../fonts/Inter-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/Inter-SemiBold.woff") format("woff"),
+    url("../fonts/Inter-SemiBold.ttf") format("truetype"),
+    url("../fonts/Inter-SemiBold.svg#Inter-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/**************** Reset Browser *****************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+
+/**************** Header Main *****************/
+.header-main {
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(28, 28, 28, 0.1);
+}
+.wrap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+.wrap-header .logo img {
+  width: 137px;
+  object-fit: cover;
+}
+.wrap-header .user-control {
+  display: flex;
+}
+.wrap-header .user-control li {
+  list-style: none;
+  margin-left: 20px;
+}
+.wrap-header .user-control li:nth-child(1) button {
+  border-radius: 22px;
+  background: #f4f7f8;
+  padding: 8px 24px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.wrap-header .user-control li:nth-child(1) button img {
+  margin-right: 7px;
+}
+.wrap-header .user-control li:nth-child(2) button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ededed;
+  cursor: pointer;
+}
+.wrap-header .user-control li:nth-child(3) .menu-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/**************** Main  ****************/
+.wrap-main {
+  background-color: #fff;
+  height: 90vh;
+  padding-top: 25px;
+}
+.main-top {
+  display: flex;
+}
+.main-top .smt-general {
+  width: 20%;
+}
+.main-top label {
+  display: block;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 100% */
+  color: rgba(48, 47, 47, 1);
+  margin-bottom: 10px;
+}
+.main-top input {
+  border: 1px solid rgba(151, 151, 151, 1);
+  padding: 0px 12px;
+  height: 35px;
+  border-radius: 4px;
+  width: 100%;
+}
+.main-top input:focus {
+ outline: none;
+}
+.main-top .smt-operations {
+  width: 70%;
+  background-color: blue;
+  height: 80px;
+}
+.main-top .smt-amount {
+  width: 10%;
+  background-color: black;
+  height: 80px;
+}
