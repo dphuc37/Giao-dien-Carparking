@@ -148,13 +148,21 @@
 .col-4 {
   width: calc(100% / 4);
 }
+.col-5 {
+  width: calc(100% / 5);
+}
 .col-6 {
   width: calc(100% / 6);
 }
 .col-8 {
   width: calc(100% / 8);
 }
-
+.col-9 {
+  width: calc(100% / 9);
+}
+.col-10 {
+  width: calc(100% / 10);
+}
 /**************** Header Main *****************/
 .header-main {
   background: #fff;
@@ -329,6 +337,11 @@
   background-color: rgba(5, 229, 0, 1);
   color: #000;
 }
+.main-center .col:nth-child(9) label,
+.main-center .col:nth-child(10) label {
+  background: linear-gradient(to right, #778899, #9C9C9C);
+  color: #fff;
+}
 .content {
   width: 100%;
   height: 230px;
@@ -418,20 +431,25 @@
   align-items: center;
   display: flex;
 }
-.main-bottom .col-8:nth-child(2) label,
-.main-bottom .col-8:nth-child(3) label {
+.main-bottom .col-10:nth-child(2) label,
+.main-bottom .col-10:nth-child(3) label {
   background-color: rgba(254, 229, 0, 1);
   color: rgba(0, 0, 0, 1);
 }
-.main-bottom .col-8:nth-child(4) label,
-.main-bottom .col-8:nth-child(5) label {
+.main-bottom .col-10:nth-child(4) label,
+.main-bottom .col-10:nth-child(5) label {
   background-color: rgba(0, 70, 250, 1);
   color: #fff;
 }
-.main-bottom .col-8:nth-child(6) label,
-.main-bottom .col-8:nth-child(7) label {
+.main-bottom .col-10:nth-child(6) label,
+.main-bottom .col-10:nth-child(7) label {
   background-color: rgba(5, 229, 0, 1);
   color: #000;
+}
+.main-bottom .col-10:nth-child(8) label,
+.main-bottom .col-10:nth-child(9) label {
+  background: linear-gradient(to right, #778899, #9C9C9C);
+  color: #fff;
 }
 .upload-citizen {
   border-radius: 4px;
@@ -439,9 +457,10 @@
   background: #fff;
   padding: 20px;
 }
-.upload-citizen img {
+.upload-citizen .img {
   width: 100%;
-  object-fit: cover;
+  height: 250px;
+  background-color: pink;
 }
 .upload-citizen ul {
   display: flex;
@@ -473,10 +492,7 @@
   margin-right: 10px;
 }
 .info-car {
-  border-radius: 4px;
-  border: 1px solid #a0a0a0;
   background: #fff;
-  padding: 20px;
   display: flex;
 }
 .info-car .box-client {
@@ -496,33 +512,38 @@
   margin-top: 10px;
 }
 .info-car .wrap-box {
-  width: 80%;
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
 }
 .info-car .box-content {
   display: flex;
-  padding-left: 15px;
 }
 .info-car .box-content .des-client {
-  width: calc(100% - 130px);
+  width: calc(100% - 145px);
 }
 .info-car .box-content .des-client ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 15px;
 }
 .info-car .box-content .des-client ul li {
   list-style: none;
   position: relative;
   margin-right: 10px;
+  text-align: center;
 }
 .info-car .box-content .des-client ul li:last-child {
   margin-right: 0;
 }
 .info-car .box-content .des-client ul li input {
-  height: 40px;
+  height: 55px;
   padding: 0px 12px;
   width: 100%;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
 }
 .info-car .box-content .des-client ul li label {
   color: #02668f;
@@ -538,20 +559,19 @@
 }
 
 .info-car .box-content .license-plates {
-  width: 130px;
+  width: 145px;
 }
 .info-car .box-content .license-plates .img-content {
   background: gray;
-  height: 95px;
+  height: 125px;
   margin-left: 10px;
 }
 .info-car .right-lane {
   display: flex;
-  padding-left: 15px;
 }
 .info-car .right-lane .title-lane {
   width: 146px;
-  height: 35px;
+  height: 55px;
   padding: 4px 40px;
   justify-content: space-between;
   align-items: center;
@@ -563,7 +583,9 @@
 }
 .info-car .right-lane input {
   border: 1px solid rgba(151, 151, 151, 1);
-  height: 35px;
+  height: 55px;
   padding: 0px 12px;
   width: 100%;
 }
+
+/* 123 */
